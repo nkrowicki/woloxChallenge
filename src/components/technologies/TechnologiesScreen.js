@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./TechnologiesScreen.module.scss";
 import CardTechnology from "./cardTechnology/CardTechnology";
+import Search from "./search/Search";
 
 const technologies = [
   {
@@ -97,8 +98,10 @@ const technologies = [
 
 const TechnologiesScreen = () => {
   // Dispatch action to get technologies and save it in store?
+
   return (
     <>
+    <Search />
       {technologies.map((technology) => (
         <CardTechnology
           tech={technology.tech}
@@ -108,6 +111,7 @@ const TechnologiesScreen = () => {
           language={technology.language}
           type={technology.type}
           logo={technology.logo}
+          key={technology.tech}
         />
       ))}
     </>
