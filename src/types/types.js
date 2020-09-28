@@ -2,7 +2,7 @@ export const types = {
     login: '[Auth] Login',
     logout: '[Auth] Logout',
 
-    getTechnology: '[Technology] Get Technology',
+    loadTechnologies: '[Technology] Load Technologies',
     searchTechnology: '[Technology] Search Technology',
 
     uiStartLoading: '[UI] Start Loading',

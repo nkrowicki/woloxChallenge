@@ -1,18 +1,27 @@
 import { types } from "../types/types";
+import swal from "sweetalert";
 
-export const fetchTechnologies = () => {
+export const startFetchTechnologies = () => {
+
   return async (dispatch) => {
-    // Fetch and load technologies
-    // dispatch()
-    dispatch (getTechnologiesToFilter())
+    try {
+      const res = await fetch(
+        "http://private-8e8921-woloxfrontendinverview.apiary-mock.com/techs"
+      );
+      const data = await res.json();
+      dispatch(loadTechnologies(data));
+    } catch (error) {
+      await swal('Error', 'An error has occurred', 'error');
+    }
   };
 };
 
 export const searchTechnologies = (searchText) => ({
-        type: types.searchTechnology,
-        payload: searchText,
+  type: types.searchTechnology,
+  payload: searchText,
 });
 
-export const getTechnologiesToFilter = () => ({
-    type: types.getTechnology,
-})
+export const loadTechnologies = (data) => ({
+  type: types.loadTechnologies,
+  payload: data,
+});
