@@ -4,7 +4,6 @@ export const types = {
 
     loadTechnologies: '[Technology] Load Technologies',
     searchTechnology: '[Technology] Search Technology',
-
-    uiStartLoading: '[UI] Start Loading',
-    uiFinishLoading: '[UI] Finish Loading',
+    startLoadTechnologies: '[Technology] Start Load Technologies',
+    endLoadTechnologies: '[Technology] End Load Technologies',
 }

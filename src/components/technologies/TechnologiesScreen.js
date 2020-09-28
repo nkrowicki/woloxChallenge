@@ -12,8 +12,7 @@ import Spinner from "../spinner/Spinner";
 const TechnologiesScreen = () => {
   const dispatch = useDispatch();
   const technologies = useSelector((state) => state.technologies);
-  const { filteredList } = technologies;
-
+  const { filteredList, isLoading } = technologies;
 
   useEffect(() => {
     dispatch(startFetchTechnologies());
@@ -25,25 +24,26 @@ const TechnologiesScreen = () => {
     dispatch(searchTechnologies(searchText));
   };
 
+  if (isLoading) return <Spinner />;
 
-    return (
-      <>
-        <Search handleSearch={handleSearch} />
-        {filteredList.length > 0 &&
-          filteredList.map((technology) => (
-            <CardTechnology
-              tech={technology.tech}
-              year={technology.year}
-              author={technology.author}
-              license={technology.license}
-              language={technology.language}
-              type={technology.type}
-              logo={technology.logo}
-              key={technology.tech}
-            />
-          ))}
-      </>
-    );
+  return (
+    <>
+      <Search handleSearch={handleSearch} />
+      {filteredList.length > 0 &&
+        filteredList.map((technology) => (
+          <CardTechnology
+            tech={technology.tech}
+            year={technology.year}
+            author={technology.author}
+            license={technology.license}
+            language={technology.language}
+            type={technology.type}
+            logo={technology.logo}
+            key={technology.tech}
+          />
+        ))}
+    </>
+  );
 };
 
 export default TechnologiesScreen;
