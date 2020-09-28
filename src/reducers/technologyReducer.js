@@ -17,7 +17,7 @@ const technologyReducer = (state = initialState, action) => {
       return {
         ...state,
         filteredList: state.list.filter((technology) =>
-          technology.tech.toLowerCase().includes(searchText)
+          technology.tech.toLowerCase().includes(searchText) || technology.type.toLowerCase().includes(searchText)
         ),
       };
 
