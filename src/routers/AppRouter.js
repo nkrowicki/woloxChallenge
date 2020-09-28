@@ -30,7 +30,7 @@ const AppRouter = () => {
         // } else {
         //  setIsLoggedIn(false);
         // }
-      setIsLoggedIn(true);
+      setIsLoggedIn(false);
       setChecking(false);
 
   }, [dispatch, setChecking, setIsLoggedIn]);
@@ -51,7 +51,6 @@ const AppRouter = () => {
             exact
             path="/"
             component={LandingScreen}
-            // isAuthenticated={isLoggedIn}
           />
           <PublicRoute
             path="/auth"

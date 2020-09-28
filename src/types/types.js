@@ -1,6 +1,6 @@
 export const types = {
-    login: '[Auth] Login',
-    logout: '[Auth] Logout',
+    authLogin: '[Auth] Login',
+    authLogout: '[Auth] Logout',
 
     loadTechnologies: '[Technology] Load Technologies',
     searchTechnology: '[Technology] Search Technology',

@@ -1,27 +1,38 @@
 import { types } from "../types/types";
+import swal from "sweetalert";
 
-export const startLogin = () => {
+export const startLogin = (valuesForm) => {
   return async (dispatch) => {
-    // Login with api wolox
-    dispatch(login('token', 'name'))
+    const url =
+      "http://private-8e8921-woloxfrontendinverview.apiary-mock.com/login";
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify(valuesForm),
+      });
+      const data = await response.json();
+      dispatch(login(data.token));
+    } catch (error) {
+      console.log(error)
+      swal("Error", "Sorry. Failed to login", "error");
+    }
   };
 };
 
 export const startLogout = () => {
-    return async (dispatch) => {
-        // Logout
-        dispatch(logout())
-    }
-}
+  return async (dispatch) => {
+    dispatch(logout());
+  };
+};
 
-export const login = (token, name) => ({
-  type: types.authLogin,
-  payload: {
-    token,
-    name,
-  },
-});
+export const login = (token) => {
+  return {
+    type: types.authLogin,
+    payload: token,
+  }
+};
 
 export const logout = () => ({
-    type: types.authLogout
-})
+  type: types.authLogout,
+});
