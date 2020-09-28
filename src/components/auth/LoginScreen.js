@@ -7,7 +7,6 @@ import swal from "sweetalert";
 import { startLogin } from "../../actions/auth";
 
 const LoginScreen = () => {
-
   const dispatch = useDispatch();
 
   const initialForm = {
@@ -18,15 +17,25 @@ const LoginScreen = () => {
   const [valuesForm, handleInputChange] = useForm(initialForm);
   const { email, password } = valuesForm;
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    if(!validateEmail(valuesForm.email)){
-        swal('Error','Invalid mail', 'error')
-        return false
+  const handleLogin = () => {
+    if (!validateEmail(valuesForm.email)) {
+      swal("Error", "Invalid mail", "error");
+      return false;
     }
+    if (password.length <1 ) {
+        swal("Error", "Invalid password", "error");
+        return false;
+      }
+  
 
-    dispatch(startLogin(valuesForm))
+    dispatch(startLogin(valuesForm));
+  };
+
+  const handleKeypress = (e) => {
+    //it triggers by pressing the enter key
+    if (e.charCode === 13) {
+      handleLogin();
+    }
   };
 
   return (
@@ -40,6 +49,7 @@ const LoginScreen = () => {
             value={email}
             onChange={handleInputChange}
             required
+            onKeyPress={handleKeypress}
           />
           <label>Email</label>
         </div>
@@ -50,6 +60,7 @@ const LoginScreen = () => {
             onChange={handleInputChange}
             name="password"
             required
+            onKeyPress={handleKeypress}
           />
           <label>Password</label>
         </div>
