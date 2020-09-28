@@ -1,12 +1,12 @@
-import React from 'react'
-import styles from './Layout.module.scss';
+import React from "react";
+import styles from "./Layout.module.scss";
 
-const Layout = () => {
-    return (
-        <div>
-            <h1 className={styles.title}>Layout</h1>
-        </div>
-    )
-}
+const Layout = ({ children }) => {
+  return (
+    <div className={styles.layout}>
+      <div className={styles.container}>{children}</div>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
