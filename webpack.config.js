@@ -7,6 +7,13 @@ module.exports = {
   output: {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/", // To solve problem with routes 
+  },
+  devServer: {
+    contentBase: "./dist",
+    disableHostCheck: true,
+    stats: { colors: true },
+    historyApiFallback: true,
   },
   mode: "production",
   module: {
