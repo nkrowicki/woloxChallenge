@@ -1,18 +1,22 @@
 import { types } from "../types/types";
 import swal from "sweetalert";
 
-export const startLogin = (valuesForm) => {
+export const startLogin = (values) => {
+  
+  const {email, password, keepLogin} = values;
+
   return async (dispatch) => {
+
     const url =
       "http://private-8e8921-woloxfrontendinverview.apiary-mock.com/login";
 
     try {
       const response = await fetch(url, {
         method: "POST",
-        body: JSON.stringify(valuesForm),
+        body: JSON.stringify({email,password}),
       });
       const data = await response.json();
-      dispatch(login(data.token));
+      dispatch(login(data.token, keepLogin));
     } catch (error) {
       console.log(error)
       swal("Error", "Sorry. Failed to login", "error");
@@ -26,7 +30,8 @@ export const startLogout = () => {
   };
 };
 
-export const login = (token) => {
+export const login = (token,keepLogin) => {
+  if(keepLogin) localStorage.setItem('token', token)
   return {
     type: types.authLogin,
     payload: token,

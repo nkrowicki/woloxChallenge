@@ -13,6 +13,7 @@ const Search = ({handleSearch}) => {
         </div>
         <div className={styles.InputContainer}>
           <input 
+          className={styles.inputSearch}
             onChange={handleSearch}
             placeholder="Example: node..." />
         </div>
