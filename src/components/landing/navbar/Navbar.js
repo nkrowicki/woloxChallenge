@@ -1,26 +1,33 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
-import woloxLogo from '../../../assets/logo_full_color.svg';
+import woloxLogo from "../../../assets/logo_full_color.svg";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const { token } = useSelector((state) => state.auth);
+  const isAuthenticated = token ? true : false;
+
   return (
     <>
       {/* Start Navbar */}
-      <div className={`${styles.navbar} ${styles.elemCenter}`} >
+      <div className={`${styles.navbar} ${styles.elemCenter}`}>
         <div className={`${styles.container}`}>
-          <div className={`${styles.parent} ${styles.leftRight}`} >
+          <div className={`${styles.parent} ${styles.leftRight}`}>
             <div className={`${styles.navbarHeader}`}>
               <button className={`${styles.toggle}`}>
                 <span />
                 <span />
                 <span />
               </button>
-              <a href='https://wolox.com.ar' className={`${styles.navbarBrand} ${styles.link}`}>
+              <a
+                href="https://wolox.com.ar"
+                className={`${styles.navbarBrand} ${styles.link}`}
+              >
                 <img className={styles.logoImage} src={woloxLogo} />
               </a>
             </div>
-            <ul className={`${styles.nav} ${styles.navlist}`}  id="links">
+            <ul className={`${styles.nav} ${styles.navlist}`} id="links">
               <li className={`${styles.active}`}>
                 <a href="#" className={styles.link} data-value="about">
                   Inicio
@@ -42,13 +49,19 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <Link to={'/auth/login'} className={`${styles.link} ${styles.loginButton}`} data-value="cont">
-                  Login
-                </Link>
+                {!isAuthenticated && (
+                  <Link
+                    to={"/auth/login"}
+                    className={`${styles.link} ${styles.loginButton}`}
+                    data-value="cont"
+                  >
+                    Login
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
-          <div className={`${styles.clearfix}`}/>
+          <div className={`${styles.clearfix}`} />
         </div>
       </div>
       {/* End Navbar */}

@@ -1,0 +1,36 @@
+@import "../../../pages/variables";
+
+.heroContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 50px 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hh1 {
+}
+
+.greenWolox {
+  color: $greenWolox;
+}
+
+.blueWolox {
+  color: $blueWolox;
+}

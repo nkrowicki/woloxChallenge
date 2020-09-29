@@ -52,7 +52,12 @@ const AppRouter = () => {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/" component={LandingScreen} />
+          <Route
+            exact
+            path="/"
+            component={LandingScreen}
+            isAuthenticated={isLoggedIn}
+          />
           <PublicRoute
             path="/auth"
             component={AuthRouter}
