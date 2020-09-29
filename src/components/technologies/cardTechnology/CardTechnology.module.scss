@@ -1,58 +1,86 @@
-  .center {
-    margin: auto;
+.center {
+  margin: auto;
+}
+
+.card {
+  font-family: Heebo, Helvetica, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+  min-height: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+
+  .image {
+    width: 60%;
+    border-radius: 10%;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin: 0.6rem 0 0 0;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 300;
   }
   
-  .card {
-    box-sizing: border-box;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  margin-top: 1rem;
+
+  .property {
     display: flex;
     flex-direction: column;
-    width: 380px;
-    min-height: 50px;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 0.5rem;
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
+    font-size: 17px;
+    font-weight: bold;
+  }
 
-    .image {
-      width: 60%;
-      border: solid 8px #eaeaea;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-    
+  .nameProperty {
+    color: #fe4e86;
+    font-weight: normal;
+  }
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+@media only screen and (max-width: 300px) {
+  .card {
+  margin: 1rem auto;
+
     .title {
       margin: 0.6rem 0 0 0;
       text-align: center;
-      font-family: Heebo, Helvetica, sans-serif;
+      font-size: x-large;
     }
     
     .subtitle {
       margin-top: 0;
       text-align: center;
-      font-family: Heebo, Helvetica, sans-serif;
-      font-weight: 300
+      font-weight: 300;
+      font-size: small;
     }
-  }
-  
-  .detailsContainer {
-    display: flex;
-    justify-content: space-between;
-    color: #333;
-    margin-top: 1rem;
 
     .property {
-        display: flex;
-        flex-direction: column;
-        font-size: large;
-        font-weight: bold;
-
+      font-size: 14px;
     }
-
-    .nameProperty {
-        color: #FE4E86;
-        font-weight: normal;
-    }
-
-
   }
+}

@@ -23,22 +23,22 @@ const CardTechnology = ({
       {/* year, license, language, type */}
       <div className={styles.detailsContainer}>
         <div className={styles.property}>
-          <span className={styles.titleProperty}>{type}</span>
-          <span className={styles.nameProperty}>Type</span>
+          <span className={`${styles.titleProperty} ${styles.textRight}`}>{type}</span>
+          <span className={`${styles.nameProperty} ${styles.textLeft}`}>Type</span>
         </div>
         <div className={styles.property}>
-          <span className={styles.titleProperty}>{language}</span>
-          <span className={styles.nameProperty}>Language</span>
-        </div>
-        <div className={styles.property}>
-          <span className={styles.titleProperty}>{license}</span>
-          <span className={styles.nameProperty}>Licence</span>
+          <span className={`${styles.titleProperty} ${styles.textRight}`}>{license}</span>
+          <span className={`${styles.nameProperty} ${styles.textRight}`}>License</span>
         </div>
       </div>
-      <div className={`${styles.detailsContainer} ${styles.center}`}>
+      <div className={`${styles.detailsContainer} `}>
         <div className={styles.property}>
-          <span className={styles.titleProperty}>{year}</span>
-          <span className={styles.nameProperty}>Year</span>
+          <span className={`${styles.titleProperty} ${styles.textLeft}`}>{language}</span>
+          <span className={`${styles.nameProperty} ${styles.textLeft}`}>Language</span>
+        </div>
+        <div className={styles.property}>
+          <span className={`${styles.titleProperty} ${styles.textRight}`}>{year}</span>
+          <span className={`${styles.nameProperty} ${styles.textRight}`}>Year</span>
         </div>
       </div>
     </div>

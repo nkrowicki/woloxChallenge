@@ -12,7 +12,7 @@ import Spinner from "../spinner/Spinner";
 const TechnologiesScreen = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
-  const {auth, technologies} = state
+  const { auth, technologies } = state;
   const { filteredList, isLoading } = technologies;
 
   useEffect(() => {
@@ -30,23 +30,26 @@ const TechnologiesScreen = () => {
   return (
     <>
       <Search handleSearch={handleSearch} />
-      {filteredList.length > 0 &&
-        filteredList.map((technology) => (
-          <CardTechnology
-            tech={technology.tech}
-            year={technology.year}
-            author={technology.author}
-            license={technology.license}
-            language={technology.language}
-            type={technology.type}
-            logo={technology.logo}
-            key={technology.tech}
-          />
-        ))}
-        <div className={styles.containerTotalTech}>
-        <h1 className={styles.totalTech}>Total Technologies: {filteredList.length}</h1>
-
-        </div>
+      <div className={styles.containerCards}>
+        {filteredList.length > 0 &&
+          filteredList.map((technology) => (
+            <CardTechnology
+              tech={technology.tech}
+              year={technology.year}
+              author={technology.author}
+              license={technology.license}
+              language={technology.language}
+              type={technology.type}
+              logo={technology.logo}
+              key={technology.tech}
+            />
+          ))}
+      </div>
+      <div className={styles.containerTotalTech}>
+        <h1 className={styles.totalTech}>
+          Total Technologies: {filteredList.length}
+        </h1>
+      </div>
     </>
   );
 };

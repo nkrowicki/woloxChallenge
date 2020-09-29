@@ -46,7 +46,7 @@ const LoginScreen = () => {
 
   return (
     <div className={styles.loginBox}>
-      <h2>Wolox Login</h2>
+      <h2 className={styles.titleLogin}>Wolox Login</h2>
       <form>
         <div className={styles.userBox}>
           <input

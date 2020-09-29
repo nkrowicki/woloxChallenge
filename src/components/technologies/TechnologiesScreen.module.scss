@@ -1,12 +1,27 @@
-.containerTotalTech{
-    display: flex;
-    justify-content: center;
+.containerTotalTech {
+  display: flex;
+  justify-content: center;
 }
 
 .totalTech {
-    text-align: center;
-    width: 50%;
-    padding: 10px;
-    box-shadow: 10px 5px 5px gray;
-    background-color: honeydew;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+  color: rgb(70, 70, 70);
+  box-shadow: #6d6d6d 5px 5px 0px 0px;
+  font-family: Heebo, Helvetica, sans-serif;
 }
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+    .totalTech{
+        font-size: medium;
+    }
+  }
+  
