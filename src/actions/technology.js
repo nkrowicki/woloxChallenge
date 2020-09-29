@@ -35,3 +35,11 @@ export const startLoading = () => ({
 export const finishLoading = () => ({
   type: types.endLoadTechnologies,
 });
+
+export const clearTechnologies = () => ({
+  type: types.clearTechnologies,
+});
+
+export const orderTechnologies = () => ({
+  type: types.orderTechnologies,
+})

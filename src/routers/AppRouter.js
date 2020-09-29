@@ -21,15 +21,17 @@ import WoloxRouter from "./WoloxRouter";
 
 const AppRouter = () => {
   const dispatch = useDispatch();
-  const {token} = useSelector(state => state.auth);
+  const { token } = useSelector((state) => state.auth);
 
   const [checking, setChecking] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     setChecking(true);
+    const localStorageToken = localStorage.getItem("token");
 
-    if (localStorage.getItem("token") || token) {
+    if (localStorageToken || token) {
+      !token && dispatch(login(localStorageToken));
       setIsLoggedIn(true);
     } else {
       setIsLoggedIn(false);

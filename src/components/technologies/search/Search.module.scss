@@ -6,11 +6,11 @@
   padding: 1px;
   border-radius: var(--border-radius);
   background: linear-gradient(-67deg, rgba(#c8d8e7, .7), rgba(255,255,255,.8));
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 
     -2px -2px 6px rgba(#fff, .6),
     2px 2px 12px #c8d8e7;
-  width: 380px;
+  width: 50%;
   margin: auto;
 }
 
@@ -105,4 +105,61 @@
   &:after {
     box-shadow: var(--top-shadow);
   }
+}
+
+.Icons {
+  min-width: 46px;
+  min-height: 46px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  margin-right: 12px;
+  box-shadow: 
+    -2px -2px 6px rgba(#fff, .6),
+    2px 2px 12px #c8d8e7;
+  cursor: pointer;
+    
+  svg {
+    transform: translate(-1px, -1px);    
+  }
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &:active{
+    transform: scale(0.9);
+
+  }
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  display: none;
+  width: 120px;
+  background-color: rgb(0, 118, 155);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  display: block;
 }

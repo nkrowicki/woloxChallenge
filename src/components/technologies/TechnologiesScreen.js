@@ -11,11 +11,12 @@ import Spinner from "../spinner/Spinner";
 
 const TechnologiesScreen = () => {
   const dispatch = useDispatch();
-  const technologies = useSelector((state) => state.technologies);
+  const state = useSelector((state) => state);
+  const {auth, technologies} = state
   const { filteredList, isLoading } = technologies;
 
   useEffect(() => {
-    dispatch(startFetchTechnologies());
+    auth.token && dispatch(startFetchTechnologies());
   }, [dispatch]);
 
   const handleSearch = (e) => {
@@ -42,6 +43,10 @@ const TechnologiesScreen = () => {
             key={technology.tech}
           />
         ))}
+        <div className={styles.containerTotalTech}>
+        <h1 className={styles.totalTech}>Total Technologies: {filteredList.length}</h1>
+
+        </div>
     </>
   );
 };
