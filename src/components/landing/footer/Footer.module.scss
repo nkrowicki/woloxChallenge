@@ -1,0 +1,61 @@
+@import "../../../pages/variables";
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.colorWolox {
+  color: $blueWolox;
+}
+
+.colorDefault {
+  color: $colorTextWolox;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.more {
+  border-radius: 50px;
+  padding: 10px 50px;
+  border: 2px solid $blueWolox;
+  background-color: $blueWolox;
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 20px 0px 40px 0px;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.textFooter {
+  margin: 10px 0px;
+}
+
+.hh2 {
+    font-size: $h2Size !important;
+}
+
+.hh3 {
+    font-size: $h3Size !important;
+}
+
+.footer {
+  background-image: url("../../../assets/Backgrounds/Bg_Footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

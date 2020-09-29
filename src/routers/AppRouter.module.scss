@@ -1,3 +1,27 @@
+$urlFonts: '../assets/Fonts/';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url($urlFonts + "Montserrat/Montserrat-Black.ttf") format("ttf"),
+    url($urlFonts + "Montserrat/Montserrat-BlackItalic.ttf") format("ttf"),
+    url($urlFonts + "Montserrat/Montserrat-Bold.ttf") format("ttf"),
+    url($urlFonts + "Montserrat/Montserrat-BoldItalic.ttf") format("ttf"),
+    url($urlFonts + "Montserrat/Montserrat-ExtraBold.ttf") format("ttf"),
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url($urlFonts + "Fira_Sans/FiraSansBlack.ttf") format("ttf"),
+  url($urlFonts + "Fira_Sans/FiraSans-BlackItalic.ttf") format("ttf"),
+  url($urlFonts + "Fira_Sans/FiraSans-Bold.ttf") format("ttf"),
+  url($urlFonts + "Fira_Sans/FiraSans-BoldItalic.ttf") format("ttf"),
+  url($urlFonts + "Fira_Sans/FiraSans-ExtraBold.ttf") format("ttf"),
+}
+
+*{
+  font-family: Montserrat, FiraSans;
+}
+
 .center {
   height: 100vh;
   width: 100%;
