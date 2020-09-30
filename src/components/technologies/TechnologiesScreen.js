@@ -32,7 +32,7 @@ const TechnologiesScreen = () => {
       <Search handleSearch={handleSearch} />
       <div className={styles.containerCards}>
         {filteredList.length > 0 &&
-          filteredList.map((technology) => (
+          filteredList.map((technology) => 
             <CardTechnology
               tech={technology.tech}
               year={technology.year}
@@ -43,7 +43,7 @@ const TechnologiesScreen = () => {
               logo={technology.logo}
               key={technology.tech}
             />
-          ))}
+          )}
       </div>
       <div className={styles.containerTotalTech}>
         <h1 className={styles.totalTech}>

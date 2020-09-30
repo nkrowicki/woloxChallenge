@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Layout.module.scss";
+import PropTypes from "prop-types";
 
 const Layout = ({ children }) => {
   return (
@@ -7,6 +8,10 @@ const Layout = ({ children }) => {
       <div className={styles.container}>{children}</div>
     </div>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

@@ -29,7 +29,7 @@ const LoginScreen = () => {
       return false;
     }
     
-    const values = {...valuesForm, keepLogin: checkboxEl.current.checked}
+    const values = { ...valuesForm, keepLogin: checkboxEl.current.checked };
     dispatch(startLogin(values));
   };
 
