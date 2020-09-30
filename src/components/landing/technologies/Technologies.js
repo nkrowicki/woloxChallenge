@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Hero2.module.scss";
+import styles from "./Technologies.module.scss";
 import image from '../../../assets/Ic_Tecnologys.svg';
 
-const Hero2 = () => {
+const Technologies = () => {
   return (
-    <div className={styles.heroContainer}>
+    <div id='tech' className={styles.heroContainer}>
       <div className={styles.hero}>
         <div>
           <h2 className={styles.hh2}>
@@ -18,4 +18,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default Technologies;

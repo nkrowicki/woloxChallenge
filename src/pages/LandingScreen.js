@@ -3,7 +3,7 @@ import styles from "./LandingScreen.module.scss";
 import Navbar from "../components/landing/navbar/Navbar";
 import Footer from "../components/landing/footer/Footer";
 import Hero from "../components/landing/hero/Hero";
-import Hero2 from "../components/landing/hero2/Hero2";
+import Technologies from "../components/landing/technologies/Technologies";
 import Section from "../components/landing/section/Section";
 import Benefits from "../components/landing/benefits/Benefits";
 import Requeriments from "../components/landing/requeriments/Requeriments";
@@ -15,7 +15,7 @@ const LandingScreen = () => {
         <Navbar />
         <Hero />
       </div>
-      <Hero2 />
+      <Technologies />
       <Section />
       <Benefits />
       <hr className={styles.line} />

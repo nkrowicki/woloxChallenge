@@ -3,7 +3,7 @@ import styles from './Benefit.module.scss';
 
 const Benefit = ({img, text}) => {
     return (
-        <div className={styles.benefit}>
+        <div id='benefits' className={styles.benefit}>
             <img src={img} />
             <p className={styles.text}>{text}</p>        
         </div>

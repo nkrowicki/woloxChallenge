@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       {/* Start Navbar */}
-      <div className={`${styles.navbar} ${styles.elemCenter}`}>
+      <div id='home' className={`${styles.navbar} ${styles.elemCenter}`}>
         <div className={`${styles.container}`}>
           <div className={`${styles.parent} ${styles.leftRight}`}>
             <div className={`${styles.navbarHeader}`}>
@@ -29,22 +29,22 @@ const Navbar = () => {
             </div>
             <ul className={`${styles.nav} ${styles.navlist}`} id="links">
               <li className={`${styles.active}`}>
-                <a href="#" className={styles.link} data-value="about">
+                <a href="#home" className={styles.link} data-value="about">
                   Inicio
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.link} data-value="port">
+                <a href="#tech" className={styles.link} data-value="port">
                   Tecnologías
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.link} data-value="foll">
+                <a href="#benefits" className={styles.link} data-value="foll">
                   Beneficios
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.link} data-value="cont">
+                <a href="#requeriments" className={styles.link} data-value="cont">
                   Requerimientos
                 </a>
               </li>

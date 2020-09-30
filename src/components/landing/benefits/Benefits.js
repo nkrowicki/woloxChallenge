@@ -10,7 +10,7 @@ import lastTechnologies from '../../../assets/Ic_brain.svg';
 
 const Benefits = () => {
   return (
-    <div className={styles.heroContainer}>
+    <div id='benefits' className={styles.heroContainer}>
       <div className={styles.container}>
 
         <h1 className={styles.hh1}>

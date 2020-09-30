@@ -6,7 +6,7 @@ import dotBlue from "../../../assets/Ic_Bullet_3.svg";
 
 const Requeriments = () => {
   return (
-    <div className={styles.heroContainer}>
+    <div id='requeriments' className={styles.heroContainer}>
       <div className={styles.container}>
 
         <div className={styles.leftSide}>
