@@ -55,6 +55,7 @@
   },
   "browserslist": "> 0.25%, not dead, not ie 11",
   "jest": {
+    "verbose": true, 
     "setupFilesAfterEnv": [
       "<rootDir>/src/__test__/setupTest.js"
     ],
