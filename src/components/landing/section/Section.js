@@ -15,7 +15,7 @@ const Section = () => {
             <img src={image} className={styles.imageTwitter} />
             <h2 className={styles.twitterText}>@Wolox</h2>
           </div>
-            <button className={styles.followTwitter}>Siguenos</button>
+          <button className={styles.followTwitter}>Siguenos</button>
         </div>
 
         <div className={styles.rightSide}>

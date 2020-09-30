@@ -49,7 +49,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                {!isAuthenticated && (
+                {!isAuthenticated && 
                   <Link
                     to={"/auth/login"}
                     className={`${styles.link} ${styles.loginButton}`}
@@ -57,7 +57,7 @@ const Navbar = () => {
                   >
                     Login
                   </Link>
-                )}
+                }
               </li>
             </ul>
           </div>

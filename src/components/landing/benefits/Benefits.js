@@ -19,12 +19,12 @@ const Benefits = () => {
         </h1>
 
         <div className={styles.benefits}>
-            <Benefit img={flexibilidad} text={'Flexibilidad Horaria'}/>
-            <Benefit img={homeOffice} text={'Home Office'}/>
-            <Benefit img={workshops} text={'Capacitaciones y workshops'}/>
-            <Benefit img={snacks} text={'Snacks, frutas y bebidas gratis'}/>
-            <Benefit img={remote} text={'Semana Remota'}/>
-            <Benefit img={lastTechnologies} text={'Trabajar en últimas tecnologías'}/>
+          <Benefit img={flexibilidad} text={'Flexibilidad Horaria'}/>
+          <Benefit img={homeOffice} text={'Home Office'}/>
+          <Benefit img={workshops} text={'Capacitaciones y workshops'}/>
+          <Benefit img={snacks} text={'Snacks, frutas y bebidas gratis'}/>
+          <Benefit img={remote} text={'Semana Remota'}/>
+          <Benefit img={lastTechnologies} text={'Trabajar en últimas tecnologías'}/>
         </div>
 
 

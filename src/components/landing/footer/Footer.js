@@ -14,7 +14,8 @@ const Footer = () => {
             <span className={styles.colorWolox}>completar el ejercicio</span>
           </h2>
 
-          <h3 className={`${styles.color} ${styles.hh3} ${styles.textFooter}`}>Te invitamos a ver más información</h3>
+          <h3 className={`${styles.color} ${styles.hh3} ${styles.textFooter}`}>
+            Te invitamos a ver más información</h3>
 
           <a href="https://wolox.com.ar">
             <button className={styles.more}>Conocer más</button>

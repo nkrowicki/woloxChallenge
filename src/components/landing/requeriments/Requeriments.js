@@ -16,7 +16,10 @@ const Requeriments = () => {
         <div className={styles.rightSide}>
           <div className={styles.listado}>
             <img className={styles.dotItem} src={dotGreen} />
-            <p className={styles.list}>Estudiantes avanzados o recibidos de carreras del rubro informático, sistemas o electrónicos.</p>
+            <p className={styles.list}>
+              Estudiantes avanzados o recibidos de carreras del rubro informático, 
+              sistemas o electrónicos.
+            </p>
           </div>
           <div className={styles.listado}>
             <img className={styles.dotItem} src={dotBlue2} />

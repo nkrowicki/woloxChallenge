@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server -d --open",
-    "lint": "eslint ./src/index.js ./src/components/**/*.js",
-    "lint:fix": "eslint --fix ./src/index.js ./src/components/**/*.js"
+    "lint": "eslint ./src/index.js ./src/components/**/**/*.js",
+    "lint:fix": "eslint --fix ./src/index.js ./src/components/**/**/*.js"
   },
   "keywords": [],
   "author": "",
