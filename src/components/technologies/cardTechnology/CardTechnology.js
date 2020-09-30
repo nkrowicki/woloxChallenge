@@ -17,6 +17,7 @@ const CardTechnology = ({
         className={styles.image}
         src={logo}
       />
+
       <h1 className={styles.title}>{tech}</h1>
       <h2 className={styles.subtitle}>{author}</h2>
 

@@ -12,7 +12,9 @@ import PrivateRoute from "./PrivateRoute";
 import styles from "./AppRouter.module.scss";
 import { login } from "../actions/auth";
 
+import ErrorBoundary from "../components/ErrorBoundary";
 import Spinner from "../components/spinner/Spinner";
+import throwError from "../components/throwError/throwError";
 
 const LandingScreen = lazy(() => import("../pages/LandingScreen"));
 const AuthRouter = lazy(() => import("./AuthRouter"));
@@ -48,31 +50,38 @@ const AppRouter = () => {
   }
 
   return (
-    <Router>
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Switch>
-            <Route
-              exact
-              path="/"
-              component={LandingScreen}
-              isAuthenticated={isLoggedIn}
-            />
-            <PublicRoute
-              path="/auth"
-              component={AuthRouter}
-              isAuthenticated={isLoggedIn}
-            />
-            <PrivateRoute
-              path="/app"
-              component={WoloxRouter}
-              isAuthenticated={isLoggedIn}
-            />
-            <Redirect to={"/"} />
-          </Switch>
-        </Suspense>
-      </div>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route
+                exact
+                path="/"
+                component={LandingScreen}
+                isAuthenticated={isLoggedIn}
+              />
+              <Route
+                exact
+                path="/throwError"
+                component={throwError}
+              />
+              <PublicRoute
+                path="/auth"
+                component={AuthRouter}
+                isAuthenticated={isLoggedIn}
+              />
+              <PrivateRoute
+                path="/app"
+                component={WoloxRouter}
+                isAuthenticated={isLoggedIn}
+              />
+              <Redirect to={"/"} />
+            </Switch>
+          </Suspense>
+        </div>
+      </Router>
+    </ErrorBoundary>
   );
 };
 
