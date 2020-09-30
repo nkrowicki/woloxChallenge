@@ -22,7 +22,7 @@ const PublicRoute = ({
 
 PublicRoute.propTypes = {
     isAuthenticated: PropTypes.bool.isRequired,
-    component: PropTypes.func.isRequired,
+    component: PropTypes.object.isRequired, //Object only when the component is Lazy React
 }
 
 export default PublicRoute

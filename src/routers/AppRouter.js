@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,12 +12,11 @@ import PrivateRoute from "./PrivateRoute";
 import styles from "./AppRouter.module.scss";
 import { login } from "../actions/auth";
 
-import LandingScreen from "../pages/LandingScreen";
 import Spinner from "../components/spinner/Spinner";
 
-// Routers
-import AuthRouter from "./AuthRouter";
-import WoloxRouter from "./WoloxRouter";
+const LandingScreen = lazy(() => import("../pages/LandingScreen"));
+const AuthRouter = lazy(() => import("./AuthRouter"));
+const WoloxRouter = lazy(() => import("./WoloxRouter"));
 
 const AppRouter = () => {
   const dispatch = useDispatch();
@@ -51,25 +50,27 @@ const AppRouter = () => {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={LandingScreen}
-            isAuthenticated={isLoggedIn}
-          />
-          <PublicRoute
-            path="/auth"
-            component={AuthRouter}
-            isAuthenticated={isLoggedIn}
-          />
-          <PrivateRoute
-            path="/app"
-            component={WoloxRouter}
-            isAuthenticated={isLoggedIn}
-          />
-          <Redirect to={"/"} />
-        </Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={LandingScreen}
+              isAuthenticated={isLoggedIn}
+            />
+            <PublicRoute
+              path="/auth"
+              component={AuthRouter}
+              isAuthenticated={isLoggedIn}
+            />
+            <PrivateRoute
+              path="/app"
+              component={WoloxRouter}
+              isAuthenticated={isLoggedIn}
+            />
+            <Redirect to={"/"} />
+          </Switch>
+        </Suspense>
       </div>
     </Router>
   );
