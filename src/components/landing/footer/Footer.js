@@ -18,7 +18,7 @@ const Footer = () => {
             Te invitamos a ver más información</h3>
 
           <a href="https://wolox.com.ar">
-            <button className={styles.more}>Conocer más</button>
+            <button id="buttonFooter" className={styles.more}>Conocer más</button>
           </a>
 
         </div>

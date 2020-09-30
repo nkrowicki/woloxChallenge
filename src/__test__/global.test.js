@@ -1,4 +1,4 @@
-const text = "Hello recruiters";
-test("Must contain recruiters", () => {
-  expect(text).toMatch(/recruiters/);
+const text = "Hello wolox";
+test("Must contain wolox", () => {
+  expect(text).toMatch(/wolox/);
 });

@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/", // To solve problem with routes 
+    publicPath: "/", // To solve problem with routes
   },
   devServer: {
     contentBase: "./dist",
@@ -48,16 +48,13 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        test: /\.(jpe?g|png|gif|woff|woff2)(\?[a-z0-9=.]+)?$/,
         loader: "url-loader?limit=100000",
       },
+      { loader: "file-loader", test: /\.(ttf|eot|svg)$/ },
     ],
   },
   plugins: [
