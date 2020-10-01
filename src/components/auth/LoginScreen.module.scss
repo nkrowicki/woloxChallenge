@@ -16,6 +16,12 @@
   cursor: pointer;
 }
 
+.buttons{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .loginBox .titleLogin {
   margin: 0 0 30px;
   padding: 0;
@@ -164,53 +170,67 @@
   }
 }
 
-
-
-
-
-
 .check {
-	-webkit-appearance: none; /*hides the default checkbox*/
-	width: 20px;
-	height: 20px;
-	position: relative;
-	transition: 0.10s;
-	text-align: center;
-	font-weight: 600;
-	border-radius: 3px;
-	outline: none;
-	background-color: white;
-  }
-  
-  .check:checked {
-	background-color: #03e9f3;
-  }
-  
+  -webkit-appearance: none; /*hides the default checkbox*/
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.1s;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 3px;
+  outline: none;
+  background-color: white;
+}
+
+.check:checked {
+  background-color: #03e9f3;
+}
+
 //   .check:before {
 // 	content: "✖";
 //   }
-  .check:checked:before {
-	content: "✔";
-	font-size: 16px;
-	color: white;
-  }
-  
-  .check:hover {
-	cursor: pointer; 
-	opacity: 0.8;
-  }
+.check:checked:before {
+  content: "✔";
+  font-size: 16px;
+  color: white;
+}
 
-  .con {
-	  display: flex;
-	  justify-content: start;
-	  align-items: center;
-	  flex-direction: row;
-	  margin-bottom: 1rem;
-	  width: 100%;
-  }
-  
-  .keepSesion{
-	color: white;
-	margin-left: 10px;
-	
-  }
+.check:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.con {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.keepSesion {
+  color: white;
+  margin-left: 10px;
+}
+
+.buttonLogin{
+  text-align: center;
+}
+
+.goToLandingButton {
+  text-align: center;
+  font-size: 13px !important;
+}
+// .goToLandingButton {
+//   color: #fff !important;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   background: rgba(0, 50, 73, 1);
+//   padding: 15px;
+//   border-radius: 50px;
+//   display: inline-block;
+//   border: none;
+//   transition: all 0.4s ease 0s;
+// }

@@ -7,6 +7,7 @@ import Technologies from "../components/landing/technologies/Technologies";
 import Section from "../components/landing/section/Section";
 import Benefits from "../components/landing/benefits/Benefits";
 import Requeriments from "../components/landing/requeriments/Requeriments";
+import { Link } from "react-router-dom";
 
 const LandingScreen = () => {
   return (
@@ -24,6 +25,14 @@ const LandingScreen = () => {
       <hr className={styles.line} />
       <Requeriments />
       <Footer />
+
+      <Link
+        to={'/app'}
+        className={styles.goToAppButton}
+      >
+       
+       Go App
+      </Link>
     </div>
   );
 };
