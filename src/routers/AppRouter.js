@@ -27,6 +27,8 @@ const AppRouter = () => {
   const [checking, setChecking] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  const iWanToWorkAtWolox = true;
+
   useEffect(() => {
     setChecking(true);
     const localStorageToken = localStorage.getItem("token");
@@ -48,6 +50,8 @@ const AppRouter = () => {
       </div>
     );
   }
+  
+  iWanToWorkAtWolox && console.log('Hi, hire me!')
 
   return (
     <ErrorBoundary>

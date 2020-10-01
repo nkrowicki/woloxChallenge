@@ -16,6 +16,11 @@ const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
 describe("Actions Auth", () => {
+ 
+  jest.mock('react-i18next', () => ({
+    useTranslation: () => ({t: key => key})
+  })); //To getting rid of jest warning
+
   test("startLogin", () => {
 
     fetchMock.getOnce(

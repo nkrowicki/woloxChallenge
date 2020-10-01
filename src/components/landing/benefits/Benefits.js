@@ -23,13 +23,13 @@ const Benefits = () => {
         </div>
 
         <div className={styles.benefits}>
-          <Benefit img={flexibilidad} text={t('benefits.benefit1')} />
-          <Benefit img={homeOffice} text={t('benefits.benefit2')} />
-          <Benefit img={workshops} text={t('benefits.benefit3')} />
-          <Benefit img={snacks} text={t('benefits.benefit4')} />
-          <Benefit img={remote} text={t('benefits.benefit5')} />
+          <Benefit img={`${flexibilidad}`} text={t('benefits.benefit1')} />
+          <Benefit img={`${homeOffice}`} text={t('benefits.benefit2')} />
+          <Benefit img={`${workshops}`} text={t('benefits.benefit3')} />
+          <Benefit img={`${snacks}`} text={t('benefits.benefit4')} />
+          <Benefit img={`${remote}`} text={t('benefits.benefit5')} />
           <Benefit
-            img={lastTechnologies}
+            img={`${lastTechnologies}`}
             text={t('benefits.benefit6')}
           />
         </div>

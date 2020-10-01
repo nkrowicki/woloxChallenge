@@ -4,6 +4,10 @@ import Hero from "../../components/landing/hero/Hero";
 
 describe('<Hero />', () => {
     
+    jest.mock('react-i18next', () => ({
+        useTranslation: () => ({t: key => key})
+      })); //To getting rid of jest warning
+      
     const hero = mount(<Hero />);
     
     test('Render component hero', () => {
@@ -11,7 +15,7 @@ describe('<Hero />', () => {
     })
 
     test('Render h1 component', () =>{
-        expect(hero.find('.spanText').text()).toEqual('Wolox')
+        expect(hero.find('.spanText').text()).toEqual('hero.title4')
     })
     
     

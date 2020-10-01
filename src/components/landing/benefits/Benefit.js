@@ -5,14 +5,14 @@ import PropTypes from "prop-types";
 const Benefit = ({ img, text }) => {
   return (
     <div id='benefits' className={styles.benefit}>
-      <img src={img} />
+      <img src={`${img}`} />
       <p className={styles.text}>{text}</p>        
     </div>
   );
 };
 
 Benefit.propTypes = {
-  img: PropTypes.object.isRequired,
+  img: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 

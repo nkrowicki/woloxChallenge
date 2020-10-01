@@ -18,6 +18,12 @@ const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
 describe("Actions technology ", () => {
+
+  jest.mock('react-i18next', () => ({
+    useTranslation: () => ({t: key => key})
+  })); //To getting rid of jest warning
+
+  
   beforeEach(() => {
     // jest.setTimeout(10000);
   });

@@ -11,7 +11,7 @@ describe('<Requeriments />', () => {
     })
 
     test('Render h1 component', () =>{
-        expect(requeriments.find('.requerimentsText').text()).toEqual('Requerimientos')
+        expect(requeriments.find('.requerimentsText').text()).toEqual('requeriments.title')
     })
     
     
