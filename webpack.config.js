@@ -56,15 +56,10 @@ module.exports = {
       },
       {
         test: /\.(png|ttf|eot|svg)$/,
-        use: [
-          {
+        loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "images/",
             },
-            loader: "file-loader",
-          },
-        ],
       },
     ],
   },
