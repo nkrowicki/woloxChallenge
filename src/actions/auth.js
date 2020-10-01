@@ -7,7 +7,7 @@ export const startLogin = (values) => {
 
   return async (dispatch) => {
     const url =
-      "http://private-8e8921-woloxfrontendinverview.apiary-mock.com/login";
+      "https://private-8e8921-woloxfrontendinverview.apiary-mock.com/login";
 
     try {
       const response = await fetch(url, {
