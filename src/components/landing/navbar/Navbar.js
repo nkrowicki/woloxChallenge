@@ -2,13 +2,22 @@ import React from "react";
 import styles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 import woloxLogo from "../../../assets/logo_full_color.svg";
+import spanish from "../../../assets/spanish.svg";
+import english from "../../../assets/english.svg";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const { token } = useSelector((state) => state.auth);
   const isAuthenticated = token ? true : false;
-  const [ t ] = useTranslation();
+  const [t, i18n] = useTranslation();
+
+  const actualLanguage = i18n.language;
+  const toLang = actualLanguage === "es" ? "en" : "es";
+
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <>
@@ -32,12 +41,12 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#tech" className={styles.link} data-value="port">
-                {t(`navbar.tech`)}
+                  {t(`navbar.tech`)}
                 </a>
               </li>
               <li>
                 <a href="#benefits" className={styles.link} data-value="foll">
-                {t(`navbar.benefits`)}
+                  {t(`navbar.benefits`)}
                 </a>
               </li>
               <li>
@@ -49,6 +58,15 @@ const Navbar = () => {
                   {t(`navbar.requeriments`)}
                 </a>
               </li>
+              <li
+                className={styles.link}
+                onClick={() => handleChangeLanguage(toLang)}
+              >
+                <img
+                  className={styles.languageFlag}
+                  src={(toLang === "es" ? spanish : english)}
+                />
+              </li>
               <li>
                 {!isAuthenticated && (
                   <Link
@@ -56,7 +74,7 @@ const Navbar = () => {
                     className={`${styles.link} ${styles.loginButton}`}
                     data-value="cont"
                   >
-                  {t(`navbar.login`)}
+                    {t(`navbar.login`)}
                   </Link>
                 )}
               </li>

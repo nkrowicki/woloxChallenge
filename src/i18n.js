@@ -10,7 +10,7 @@ const resources = {
     translation: translationEN
   },
   es: {
-      transalation: translationES
+      translation: translationES
   }
 };
 
@@ -18,7 +18,8 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en",
+    lng: "es",
+    whitelist: ['en', 'es'],
 
     keySeparator: '.', // keys in form messages.welcome
 

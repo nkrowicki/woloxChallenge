@@ -18,7 +18,7 @@ const Benefits = () => {
         <div className={styles.leftSide}>
           <h1 className={`${styles.hh1} titleBenefits`}>
             {t('benefits.title')}
-            <span className={styles.blueWolox}>{" ;)"}</span>
+            <span className={styles.blueWolox}>{t('benefits.title2')}</span>
           </h1>
         </div>
 

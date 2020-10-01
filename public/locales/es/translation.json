@@ -1,3 +1,48 @@
 {
-    "texto": "Texto en espanol"
+    "navbar": {
+      "home": "Inicio",
+      "tech": "Tecnologías",
+      "benefits": "Beneficios",
+      "requeriments": "Requerimientos",
+      "login": "Iniciar Sesión"
+    },
+    "hero":{
+      "title1": "Bienvenido a tu ",
+      "title2": "Entrevista Técnica ",
+      "title3": "en ",
+      "title4": "wolox"
+    },
+    "technologies": {
+      "title": "Estamos buscando incorporar gente increíble para estas tecnologías:"
+    },
+    "section":{
+      "buttonFollow": "Siguenos",
+      "title1": "Trabajamos para ",
+      "title2": "convertir ",
+      "title3": "ideas ",
+      "title4": "en productos."
+    },
+    "benefits": {
+      "title": "Entre los beneficios que ofrecemos se encuentran ",
+      "title2": ";)",
+      "benefit1": "Flexibilidad Horaria",
+      "benefit2": "Home Office",
+      "benefit3": "Capacitaciones y workshops",
+      "benefit4": "Snacks, frutas y bebidas gratis",
+      "benefit5": "Semana remota",
+      "benefit6": "Trabajar en últimas tecnologías"
+    },
+    "requeriments":{
+      "title": "Requerimientos",
+      "requeriment1": "Estudiantes avanzados o recibidos de carreras del rubro informático, sistemas o electrónicos.",
+      "requeriment2": "Inglés intermedio/avanzado",
+      "requeriment3": "Conocimiento en metodologías ágiles (deseable)"
+    },
+    "footer":{
+      "title1": "Gracias por ",
+      "title2": "completar el ejercicio",
+      "subTitle": "Te invitamos a ver más información",
+      "footerButton": "Conocer más"
+    },
+    "goAppButton": "Ir a la aplicación"
   }

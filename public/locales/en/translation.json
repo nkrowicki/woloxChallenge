@@ -1,5 +1,4 @@
 {
-  "test": "pruebita",
     "navbar": {
       "home": "Home",
       "tech": "Technologies",
@@ -24,7 +23,8 @@
       "title4": "into products."
     },
     "benefits": {
-      "title": "Among the benefits we offer are ;)",
+      "title": "Among the benefits we offer are ",
+      "title2": ";)",
       "benefit1": "Flexible schedule",
       "benefit2": "Home Office",
       "benefit3": "Trainings and workshops",
