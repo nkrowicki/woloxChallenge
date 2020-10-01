@@ -10,6 +10,7 @@ import Requeriments from "../components/landing/requeriments/Requeriments";
 import { Link } from "react-router-dom";
 
 const LandingScreen = () => {
+  
   return (
     <div className={styles.landingContainer}>
       <div className={styles.navBarHero}>
@@ -26,12 +27,8 @@ const LandingScreen = () => {
       <Requeriments />
       <Footer />
 
-      <Link
-        to={'/app'}
-        className={styles.goToAppButton}
-      >
-       
-       Go App
+      <Link to={"/app"} className={styles.goToAppButton}>
+        Go App
       </Link>
     </div>
   );
