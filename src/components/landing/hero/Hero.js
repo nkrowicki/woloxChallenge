@@ -12,7 +12,6 @@ const Hero = () => {
           </h1>
         </div>
         <img src='../../../assets/ImgHero/Ic_ilustra_Hero.png' className={styles.imageHero} />
-        <div className={styles.putImage}></div>
       </div>
     </div>
   );

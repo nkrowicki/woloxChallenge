@@ -3,6 +3,7 @@
 .heroContainer{
     display: flex;
     justify-content: center;
+
 }
 
 .hero{
@@ -11,10 +12,13 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 80%;
+    width: 70%;
 }
 
-
+.imageHero{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 .greenWolox{
     color: $greenWolox;
 }
@@ -23,16 +27,5 @@
     text-align: start;
     width: 70%;
     font-size: $h2Size;
-    margin-top: -40px
-}
-
-.putImage{
-    background-image: url('../../../assets/ImgHero/Ic_ilustra_Hero.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: scaleX(-1);
-
-    height: 400px;
-    width: 400px;
+    margin-top: -40px;
 }

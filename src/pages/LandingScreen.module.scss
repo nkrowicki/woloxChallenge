@@ -1,6 +1,5 @@
 .landingContainer {
   background-color: white;
-  
 }
 
 .navBarHero {
@@ -11,12 +10,15 @@
 }
 
 .line {
-    clear:both;
-    margin-bottom: 0px;
-    border: 0;
-    width: 70%;
-    height: 6px;
-    background-image: linear-gradient(to right, white, transparent, white), linear-gradient(transparent, rgba(26, 26, 26, 0.55)  150%);    
-    background-image: -moz-linear-gradient(to right, white, transparent, white), -webkit-linear-gradient(transparent, rgba(26, 26, 26, 0.55) 150%);
-    background-image: -ms-linear-gradient(to right, white, transparent, white), -webkit-linear-gradient(transparent, rgba(26, 26, 26, 0.55) 150%);
+  clear: both;
+  margin-bottom: 0px;
+  border: 0;
+  width: 70%;
+  height: 6px;
+  background-image: linear-gradient(to right, white, transparent, white),
+    linear-gradient(transparent, rgba(26, 26, 26, 0.55) 150%);
+  background-image: -moz-linear-gradient(to right, white, transparent, white),
+    -webkit-linear-gradient(transparent, rgba(26, 26, 26, 0.55) 150%);
+  background-image: -ms-linear-gradient(to right, white, transparent, white),
+    -webkit-linear-gradient(transparent, rgba(26, 26, 26, 0.55) 150%);
 }
