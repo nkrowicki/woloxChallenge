@@ -19,7 +19,7 @@ describe("Actions Auth", () => {
   test("startLogin", () => {
 
     fetchMock.getOnce(
-      "http://private-8e8921-woloxfrontendinverview.apiary-mock.com/login",
+      "https://private-8e8921-woloxfrontendinverview.apiary-mock.com/login",
       {
         method: "POST",
         body: {

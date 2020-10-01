@@ -28,7 +28,7 @@ describe("Actions technology ", () => {
 
   test("startFetchTechnologies", () => {
     fetchMock.getOnce(
-      "http://private-8e8921-woloxfrontendinverview.apiary-mock.com/techs",
+      "https://private-8e8921-woloxfrontendinverview.apiary-mock.com/techs",
       {
         body: {
           tech: ["i", "want", "to", "work", "in", "wolox", "with", "you!"],
