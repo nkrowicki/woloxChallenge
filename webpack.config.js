@@ -10,7 +10,7 @@ module.exports = {
     publicPath: "/", // To solve problem with routes
   },
   devServer: {
-    contentBase: "./dist",
+    contentBase: path.resolve(__dirname, 'src'),
     disableHostCheck: true,
     stats: { colors: true },
     historyApiFallback: true,
@@ -51,10 +51,10 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpe?g|png|gif|woff|woff2)(\?[a-z0-9=.]+)?$/,
+        test: /\.(jpe?g|gif|woff|woff2)(\?[a-z0-9=.]+)?$/,
         loader: "url-loader?limit=100000",
       },
-      { loader: "file-loader", test: /\.(ttf|eot|svg)$/ },
+      { loader: "file-loader", test: /\.(png|ttf|eot|svg)$/ },
     ],
   },
   plugins: [
