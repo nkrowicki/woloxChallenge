@@ -7,8 +7,8 @@ const Hero = () => {
       <div className={styles.hero}>
         <div className={styles.leftSide}>
           <h1 className={styles.hh1}>
-            Bienvenido a tu <b>Entrevista Técnica</b> en{" "}
-            <span className={`${styles.greenWolox} spanText`}>Wolox</span>
+            Bienvenido a tu <span className={styles.regularText}>Entrevista Técnica</span> en{" "}
+            <span className={`${styles.greenWolox} ${styles.boldText} spanText`}>Wolox</span>
           </h1>
         </div>
         <div className={styles.rightSide}>

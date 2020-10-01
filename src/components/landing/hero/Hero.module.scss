@@ -1,59 +1,66 @@
 @import "../../../pages/variables";
 
-.heroContainer{
-    display: flex;
-    justify-content: center;
+.heroContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.hero{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    width: 70%;
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 70%;
 }
 
-.imageHero{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.imageHero {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
-.greenWolox{
-    color: $greenWolox;
-}
-
-.hh1{
-    text-align: start;
-    width: 70%;
-    font-size: $h2Size;
-    margin-top: -40px;
+.greenWolox {
+  color: $greenWolox;
 }
 
+.boldText {
+  font-family: "Montserrat Bold", "Fira Sans Light" !important;
+}
+
+.hh1 {
+  text-align: start;
+  width: 70%;
+  font-size: $h2Size;
+  margin-top: -40px;
+}
+
+.regularText {
+  font-family: "Montserrat Regular", "Fira Sans Light";
+}
 /* Mobile Screen */
-  @media (max-width: $mobile) {
-    .hero {
-      width: 90%;
-      flex-direction: column;
-    }
-
-    .hh1{
-        text-align: center;
-        width: 100%;
-    }
+@media (max-width: $mobile) {
+  .hero {
+    width: 90%;
+    flex-direction: column;
   }
 
-  /* Mudium Screen */
-  
-  @media (min-width: $tablet) {
-    .hero {
-      width: 90%;
-    }
+  .hh1 {
+    text-align: center;
+    width: 100%;
   }
-  
-  /* Large Screen */
-  
-  @media (min-width: $large) {
-    .hero {
-      width: 1170px;
-    }
+}
+
+/* Mudium Screen */
+
+@media (min-width: $tablet) {
+  .hero {
+    width: 90%;
   }
+}
+
+/* Large Screen */
+
+@media (min-width: $large) {
+  .hero {
+    width: 1170px;
+  }
+}

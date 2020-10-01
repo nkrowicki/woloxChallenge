@@ -57,6 +57,7 @@
   font-size: $h2Size;
   text-align: start;
   width: 100%;
+  font-family: "Montserrat Bold", "Fira Sans Light";
 }
 
 .hh2 {
@@ -119,14 +120,33 @@
   .rightSide {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     width: 90%;
   }
+
+  .listado {
+    width: 80%;
+}
 }
 
 /* Large Screen */
 
 @media (min-width: $large) {
+
+  .leftSide {
+    width: 50%;
+  }
+
+  .rightSide {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+  }
+
+  .listado {
+    width: 70%;
+}
 
 }

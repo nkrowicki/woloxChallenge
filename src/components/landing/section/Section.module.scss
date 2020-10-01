@@ -95,10 +95,13 @@
 }
 
 .hh2 {
-  font-weight: normal;
-  width: 70%;
-  font-size: $h3Size;
-  margin-top: -40px;
+  font-size: 40px;
+  font-family: "Montserrat Regular", "Fira Sans Light";
+
+}
+
+.boldText{
+  font-family: "Montserrat Bold", "Fira Sans Light";
 }
 
 /* Mobile Screen */
@@ -123,14 +126,8 @@
     width: 100%;
   }
 
-  .rightSide {
-    width: 100%;
-    .hh2 {
-      width: 100%;
-      font-size: $h3Size;
-      margin-top: 0px;
-    }
-  }
+
+  
 
   .followTwitter {
     margin: 40px 0px;
@@ -168,9 +165,8 @@
   .rightSide {
     width: 100%;
     .hh2 {
-      width: 100%;
-      font-size: $h3Size;
-      margin-top: 0px;
+      width: 70%;
+      font-size: 40px;
     }
   }
 }

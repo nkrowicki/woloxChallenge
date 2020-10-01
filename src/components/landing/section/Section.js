@@ -20,8 +20,8 @@ const Section = () => {
 
         <div className={styles.rightSide}>
           <h2 className={styles.hh2}>
-            Trabajamos para <span className={styles.blueWolox}>convertir</span>{" "}
-            <span className={styles.greenWolox}>ideas</span> en productos.
+            Trabajamos para <span className={`${styles.blueWolox} ${styles.boldText}`}>convertir</span>{" "}
+            <span className={`${styles.greenWolox} ${styles.boldText} `}>ideas</span> en productos.
           </h2>
         </div>
       </div>

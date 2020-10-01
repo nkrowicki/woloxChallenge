@@ -2,29 +2,40 @@ $fontUrlMontserrat: "../assets/Fonts/Montserrat/";
 $fontUrlFiraSans: "../assets/Fonts/Fira_Sans/";
 
 @font-face {
-  font-family: "Fira Sans";
-  src: 
-  // url($fontUrlFiraSans + "FiraSans-BlackItalic.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-Bold.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-BoldItalic.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-ExtraBold.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-ExtraBoldItalic.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-ExtraLight.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-ExtraLightItalic.ttf") format("truetype"),
-  // url($fontUrlFiraSans + "FiraSans-Italic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-Light.ttf") format("ttf"),
-  url($fontUrlFiraSans + "FiraSans-LightItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-Medium.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-MediumItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-Regular.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-SemiBold.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-SemiBoldItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-Thin.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-ThinItalic.ttf") format("truetype"),
+  font-family: "Fira Sans Light";
+  src: url($fontUrlFiraSans + "FiraSans-Light.ttf") format("ttf"),
+    url($fontUrlFiraSans + "FiraSans-LightItalic.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-Medium.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-MediumItalic.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-Regular.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-SemiBold.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-SemiBoldItalic.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-Thin.ttf") format("truetype"),
+    url($fontUrlFiraSans + "FiraSans-ThinItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Fira Sans Light";
+  src: url($fontUrlFiraSans + "FiraSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans Medium";
+  src: url($fontUrlFiraSans + "FiraSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans Regular";
+  src: url($fontUrlFiraSans + "FiraSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fira Sans Bold";
+  src: url($fontUrlFiraSans + "FiraSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
   src: 
   // url($fontUrlMontserrat + "Montserrat-Black.ttf") format("truetype"),
   // url($fontUrlMontserrat + "Montserrat-BlackItalic.ttf") format("truetype"),
@@ -37,18 +48,31 @@ $fontUrlFiraSans: "../assets/Fonts/Fira_Sans/";
   // url($fontUrlMontserrat + "Montserrat-Italic.ttf") format("truetype"),
   // url($fontUrlMontserrat + "Montserrat-Light.ttf") format("truetype"),
   // url($fontUrlMontserrat + "Montserrat-LightItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-Medium.ttf") format("ttftruetype"),
-  // url($fontUrlMontserrat + "Montserrat-MediumItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-Regular.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-SemiBold.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-SemiBoldItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-Thin.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-ThinItalic.ttf") format("truetype"),
+    url($fontUrlMontserrat + "Montserrat-Medium.ttf") format("ttftruetype"),
+    // url($fontUrlMontserrat + "Montserrat-MediumItalic.ttf") format("truetype"),
+    url($fontUrlMontserrat + "Montserrat-Regular.ttf") format("truetype"),
+    url($fontUrlMontserrat + "Montserrat-SemiBold.ttf") format("truetype"),
+    url($fontUrlMontserrat + "Montserrat-SemiBoldItalic.ttf") format("truetype"),
+    url($fontUrlMontserrat + "Montserrat-Thin.ttf") format("truetype"),
+    url($fontUrlMontserrat + "Montserrat-ThinItalic.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat Light";
+  src: url($fontUrlMontserrat + "Montserrat-Light.ttf") format("truetype");
+}
 
-*{
-  font-family: "Montserrat", "Fira Sans",;
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url($fontUrlMontserrat + "Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url($fontUrlMontserrat + "Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+  font-family: "Montserrat Light", "Fira Sans Light";
 }
 
 .center {

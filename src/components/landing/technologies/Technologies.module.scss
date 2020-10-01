@@ -23,6 +23,8 @@
   font-weight: normal;
   font-size: $h3Size;
   margin-top: -40px;
+  font-family: "Montserrat Regular", "Fira Sans Light";
+
 }
 
 /* Mobile Screen */
@@ -31,16 +33,16 @@
     width: 100%;
     flex-direction: column;
   }
-  .rightSide{
-      display: flex;
-      justify-content: center;
+  .rightSide {
+    display: flex;
+    justify-content: center;
   }
   .leftSide {
-    width:100%;
+    width: 100%;
     text-align: center;
   }
-  .imageHero{
-      width: 80%;
+  .imageHero {
+    width: 80%;
   }
 
   .hh2 {

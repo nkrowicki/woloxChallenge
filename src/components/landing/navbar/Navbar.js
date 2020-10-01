@@ -15,11 +15,6 @@ const Navbar = () => {
         <div className={`${styles.container}`}>
           <div className={`${styles.parent} ${styles.leftRight}`}>
             <div className={`${styles.navbarHeader}`}>
-              <button className={`${styles.toggle}`}>
-                <span />
-                <span />
-                <span />
-              </button>
               <a
                 href="https://wolox.com.ar"
                 className={`${styles.navbarBrand} ${styles.link}`}
@@ -28,7 +23,7 @@ const Navbar = () => {
               </a>
             </div>
             <ul className={`${styles.nav} ${styles.navlist}`} id="links">
-              <li className={`${styles.active}`}>
+              <li>
                 <a href="#home" className={styles.link} data-value="about">
                   Inicio
                 </a>

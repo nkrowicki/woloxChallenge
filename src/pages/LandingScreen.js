@@ -13,6 +13,9 @@ const LandingScreen = () => {
     <div className={styles.landingContainer}>
       <div className={styles.navBarHero}>
         <Navbar />
+        <div className={styles.firstSeparator}>
+          <hr className={styles.firstLine} />
+        </div>
         <Hero />
       </div>
       <Technologies />

@@ -8,6 +8,12 @@
 
 .colorWolox {
   color: $blueWolox;
+  font-family: "Montserrat Regular", "Fira Sans Light";
+
+}
+
+.logoImage{
+  margin-top: 60px;
 }
 
 .colorDefault {
@@ -26,9 +32,11 @@
   background-color: $blueWolox;
   color: #fff;
   cursor: pointer;
-  font-size: $h4Size;
+  font-size: $h5Size;
   margin: 20px 0px 40px 0px;
   font-weight: bold;
+  font-family: "Montserrat Bold", "Fira Sans Light";
+
 
   &:hover {
     transform: scale(1.1);
@@ -41,6 +49,8 @@
 
 .hh2 {
     font-size: $h2Size !important;
+  font-family: "Montserrat Regular", "Fira Sans Light";
+
 }
 
 .hh3 {
@@ -51,9 +61,9 @@
   background-image: url("../../../assets/Backgrounds/Bg_Footer.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
-  height: 500px;
+  height: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
