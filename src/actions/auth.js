@@ -17,7 +17,7 @@ export const startLogin = (values) => {
       const data = await response.json();
       dispatch(saveLogin(data.token, keepLogin));
     } catch (error) {
-      console.log(error);
+
       swal("Error", "Sorry. Failed to login", "error");
     }
   };

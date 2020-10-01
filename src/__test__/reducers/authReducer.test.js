@@ -3,7 +3,7 @@ import { types } from "../../types/types";
 
 describe("Reducers", () => {
 
-  test("default: Return initial state", () => {
+  test("default: Return state", () => {
     const state = {};
     expect(authReducer(state, "")).toEqual(state);
   });
@@ -19,7 +19,7 @@ describe("Reducers", () => {
     expect(authReducer(state, action)).toEqual(initialState);
   });
 
-  test("authLogout: Return initial state", () => {
+  test("authLogin", () => {
     const state = {};
     const action = {
       type: types.authLogin,
