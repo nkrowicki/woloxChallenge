@@ -7,27 +7,30 @@ import workshops from "../../../assets/Ic_Workshops.svg";
 import snacks from "../../../assets/Ic_DrinkSnacks.svg";
 import remote from "../../../assets/Ic_laptop.svg";
 import lastTechnologies from "../../../assets/Ic_brain.svg";
+import { useTranslation } from "react-i18next";
 
 const Benefits = () => {
+  const [t] = useTranslation();
+
   return (
     <div id="benefits" className={styles.heroContainer}>
       <div className={styles.container}>
         <div className={styles.leftSide}>
           <h1 className={`${styles.hh1} titleBenefits`}>
-            Entre los beneficios que ofrecemos se encuentran
+            {t('benefits.title')}
             <span className={styles.blueWolox}>{" ;)"}</span>
           </h1>
         </div>
 
         <div className={styles.benefits}>
-          <Benefit img={flexibilidad} text={"Flexibilidad Horaria"} />
-          <Benefit img={homeOffice} text={"Home Office"} />
-          <Benefit img={workshops} text={"Capacitaciones y workshops"} />
-          <Benefit img={snacks} text={"Snacks, frutas y bebidas gratis"} />
-          <Benefit img={remote} text={"Semana Remota"} />
+          <Benefit img={flexibilidad} text={t('benefits.benefit1')} />
+          <Benefit img={homeOffice} text={t('benefits.benefit2')} />
+          <Benefit img={workshops} text={t('benefits.benefit3')} />
+          <Benefit img={snacks} text={t('benefits.benefit4')} />
+          <Benefit img={remote} text={t('benefits.benefit5')} />
           <Benefit
             img={lastTechnologies}
-            text={"Trabajar en últimas tecnologías"}
+            text={t('benefits.benefit6')}
           />
         </div>
       </div>
