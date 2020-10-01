@@ -7,8 +7,6 @@ import {
   login,
   startLogin,
   logout,
-  saveLogin,
-  startLogout,
 } from "../../actions/auth";
 import { types } from "../../types/types";
 
@@ -41,10 +39,13 @@ describe("Actions Auth", () => {
       password: "w0l0X2020.secureP4ssWOoooord1",
       keepLogin: false,
     };
-
+    const expectedActions = [
+      { type: types.startLogin },
+      { type: types.endLogin },
+    ];
     return store.dispatch(startLogin(values)).then(() => {
       // return of async actions
-      expect(store.getActions()).toEqual([]); //im not sure if it's correct.
+      expect(store.getActions()).toEqual(expectedActions); 
     });
   });
 

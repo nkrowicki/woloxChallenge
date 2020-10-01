@@ -7,7 +7,7 @@ import {
   searchTechnologies,
   startFetchTechnologies,
 } from "../../actions/technology";
-import Spinner from "../spinner/Spinner";
+import CenterSpinner from "../spinner/CenterSpinner";
 
 const TechnologiesScreen = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const TechnologiesScreen = () => {
     dispatch(searchTechnologies(searchText));
   };
 
-  if (isLoading) return <Spinner />;
+  if (isLoading) return <CenterSpinner />;
 
   return (
     <>

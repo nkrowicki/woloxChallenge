@@ -19,7 +19,7 @@ const Footer = () => {
           </h2>
 
           <h3 className={`${styles.color} ${styles.hh3} ${styles.textFooter}`}>
-          {t('footer.subTitle')}</h3>
+            {t('footer.subTitle')}</h3>
 
           <a href="https://wolox.com.ar">
             <button id="buttonFooter" className={styles.more}>{t('footer.footerButton')}</button>

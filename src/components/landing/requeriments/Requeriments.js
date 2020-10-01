@@ -20,7 +20,7 @@ const Requeriments = () => {
           <div className={styles.listado}>
             <img className={styles.dotItem} src={dotGreen} />
             <p className={styles.list}>
-            {t('requeriments.requeriment1')}
+              {t('requeriments.requeriment1')}
             </p>
           </div>
           <div className={styles.listado}>

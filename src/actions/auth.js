@@ -10,6 +10,7 @@ export const startLogin = (values) => {
       "https://private-8e8921-woloxfrontendinverview.apiary-mock.com/login";
 
     try {
+      dispatch(startAuth());
       const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify({ email, password }),
@@ -20,6 +21,7 @@ export const startLogin = (values) => {
 
       swal("Error", "Sorry. Failed to login", "error");
     }
+    dispatch(endAuth());
   };
 };
 
@@ -46,3 +48,11 @@ export const login = (token) => ({
   type: types.authLogin,
   payload: token,
 });
+
+export const startAuth = () => ({
+  type: types.startLogin
+})
+
+export const endAuth = () => ({
+  type: types.endLogin
+})

@@ -1,13 +1,15 @@
 import React, { useRef } from "react";
 import styles from "./LoginScreen.module.scss";
 import { useForm } from "../../hooks/useForm";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { validateEmail } from "../../helpers/validateEmail";
 import swal from "sweetalert";
 import { startLogin } from "../../actions/auth";
 import { Link } from "react-router-dom";
+import CenterSpinner from "../spinner/CenterSpinner";
 
 const LoginScreen = () => {
+  const { isLoading } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const checkboxEl = useRef(false);
 
@@ -44,6 +46,8 @@ const LoginScreen = () => {
       handleLogin();
     }
   };
+
+  if (isLoading) return <CenterSpinner />;
 
   return (
     <>
@@ -90,7 +94,10 @@ const LoginScreen = () => {
             </span>
           </div>
           <div className={styles.buttons}>
-            <a onClick={handleLogin} className={`${styles.pointer} ${styles.buttonLogin}`}>
+            <a
+              onClick={handleLogin}
+              className={`${styles.pointer} ${styles.buttonLogin}`}
+            >
               <span className={styles.spancito} />
               <span className={styles.spancito} />
               <span className={styles.spancito} />

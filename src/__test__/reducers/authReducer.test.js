@@ -12,6 +12,7 @@ describe("Reducers", () => {
     const state = {};
     const initialState = {
       token: null,
+      isLoading: false
     };
     const action = {
       type: types.authLogout,

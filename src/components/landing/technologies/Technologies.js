@@ -15,7 +15,7 @@ const Technologies = () => {
           </h2>
         </div>
         <div className={styles.rightSide}>
-        <img src={image} className={styles.imageHero} />
+          <img src={image} className={styles.imageHero} />
         </div>
       </div>
     </div>
