@@ -6,13 +6,14 @@ const Technologies = () => {
   return (
     <div id='tech' className={styles.heroContainer}>
       <div className={styles.hero}>
-        <div>
+        <div className={styles.leftSide}>
           <h2 className={styles.hh2}>
             Estamos buscando incorporar gente increíble para estas tecnologías:
           </h2>
         </div>
+        <div className={styles.rightSide}>
         <img src={image} className={styles.imageHero} />
-        <div className={styles.putImage}></div>
+        </div>
       </div>
     </div>
   );

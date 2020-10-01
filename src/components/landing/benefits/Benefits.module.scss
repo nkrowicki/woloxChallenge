@@ -2,7 +2,7 @@
 
 .heroContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   margin: 50px 0px;
 }
@@ -24,13 +24,35 @@
     margin-top: 20px;
 }
 
-.hh1 {
-}
-
 .greenWolox {
   color: $greenWolox;
 }
 
 .blueWolox {
   color: $blueWolox;
+}
+
+.hh1{
+  text-align: center;
+}
+
+/* Mobile Screen */
+@media (max-width: $mobile) {
+  .benefits{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+/* Mudium Screen */
+
+@media (min-width: $tablet) {
+
+}
+
+/* Large Screen */
+
+@media (min-width: $large) {
+
 }

@@ -1,5 +1,11 @@
+// body{
+//   width: 100% !important;
+//   display: flex;
+//   margin: 0px;
+// }
+
 .landingContainer {
-  background-color: white;
+  width: 100%;
 }
 
 .navBarHero {
@@ -7,6 +13,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  display: flex;
+  flex-direction: column;
 }
 
 .line {

@@ -3,7 +3,6 @@
 .heroContainer{
     display: flex;
     justify-content: center;
-
 }
 
 .hero{
@@ -29,3 +28,32 @@
     font-size: $h2Size;
     margin-top: -40px;
 }
+
+/* Mobile Screen */
+  @media (max-width: $mobile) {
+    .hero {
+      width: 90%;
+      flex-direction: column;
+    }
+
+    .hh1{
+        text-align: center;
+        width: 100%;
+    }
+  }
+
+  /* Mudium Screen */
+  
+  @media (min-width: $tablet) {
+    .hero {
+      width: 90%;
+    }
+  }
+  
+  /* Large Screen */
+  
+  @media (min-width: $large) {
+    .hero {
+      width: 1170px;
+    }
+  }

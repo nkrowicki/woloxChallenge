@@ -1,29 +1,78 @@
 @import "../../../pages/variables";
 
-.heroContainer{
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px;
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
 }
 
-.hero{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.greenWolox {
+  color: $greenWolox;
+}
+
+.hh2 {
+  text-align: start;
+  font-weight: normal;
+  font-size: $h3Size;
+  margin-top: -40px;
+}
+
+/* Mobile Screen */
+@media (max-width: $mobile) {
+  .hero {
+    width: 100%;
+    flex-direction: column;
+  }
+  .rightSide{
+      display: flex;
+      justify-content: center;
+  }
+  .leftSide {
+    width:100%;
+    text-align: center;
+  }
+  .imageHero{
+      width: 80%;
+  }
+
+  .hh2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+/* Mudium Screen */
+
+@media (min-width: $tablet) {
+  .hero {
+    width: 100%;
+  }
+
+  .imageHero {
+    width: 90%;
+  }
+
+  .leftSide {
     width: 70%;
+  }
 }
 
+/* Large Screen */
 
-.greenWolox{
-    color: $greenWolox;
-}
+@media (min-width: $large) {
+  .hero {
+    width: 1170px;
+  }
 
-.hh2{
-    text-align: start;
-    font-weight: normal;
-    width: 70%;
-    font-size: $h3Size;
-    margin-top: -40px
+  .hh2 {
+    width: 50%;
+  }
 }

@@ -4,15 +4,14 @@ $fontUrlFiraSans: "../assets/Fonts/Fira_Sans/";
 @font-face {
   font-family: "Fira Sans";
   src: 
-  url($fontUrlFiraSans + "FiraSansBlack.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-BlackItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-Bold.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-BoldItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-ExtraBold.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-ExtraBoldItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-ExtraLight.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-ExtraLightItalic.ttf") format("truetype"),
-  url($fontUrlFiraSans + "FiraSans-Italic.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-BlackItalic.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-Bold.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-BoldItalic.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-ExtraBold.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-ExtraBoldItalic.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-ExtraLight.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-ExtraLightItalic.ttf") format("truetype"),
+  // url($fontUrlFiraSans + "FiraSans-Italic.ttf") format("truetype"),
   url($fontUrlFiraSans + "FiraSans-Light.ttf") format("ttf"),
   url($fontUrlFiraSans + "FiraSans-LightItalic.ttf") format("truetype"),
   url($fontUrlFiraSans + "FiraSans-Medium.ttf") format("truetype"),
@@ -26,19 +25,20 @@ $fontUrlFiraSans: "../assets/Fonts/Fira_Sans/";
 
 @font-face {
   font-family: "Montserrat";
-  src: url($fontUrlMontserrat + "Montserrat-Black.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-BlackItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-Bold.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-BoldItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-ExtraBold.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-ExtraBoldItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-ExtraLight.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-ExtraLightItalic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-Italic.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-Light.ttf") format("truetype"),
-  url($fontUrlMontserrat + "Montserrat-LightItalic.ttf") format("truetype"),
+  src: 
+  // url($fontUrlMontserrat + "Montserrat-Black.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-BlackItalic.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-Bold.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-BoldItalic.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-ExtraBold.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-ExtraBoldItalic.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-ExtraLight.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-ExtraLightItalic.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-Italic.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-Light.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-LightItalic.ttf") format("truetype"),
   url($fontUrlMontserrat + "Montserrat-Medium.ttf") format("ttftruetype"),
-  url($fontUrlMontserrat + "Montserrat-MediumItalic.ttf") format("truetype"),
+  // url($fontUrlMontserrat + "Montserrat-MediumItalic.ttf") format("truetype"),
   url($fontUrlMontserrat + "Montserrat-Regular.ttf") format("truetype"),
   url($fontUrlMontserrat + "Montserrat-SemiBold.ttf") format("truetype"),
   url($fontUrlMontserrat + "Montserrat-SemiBoldItalic.ttf") format("truetype"),
@@ -48,7 +48,7 @@ $fontUrlFiraSans: "../assets/Fonts/Fira_Sans/";
 
 
 *{
-  font-family: "Montserrat", "Fira Sans";
+  font-family: "Montserrat", "Fira Sans",;
 }
 
 .center {

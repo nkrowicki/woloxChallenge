@@ -65,3 +65,68 @@
   font-size: $h3Size;
   margin-top: -40px;
 }
+
+
+
+/* Mobile Screen */
+@media (max-width: $mobile) {
+ 
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hh1 {
+    font-size: $h3Size;
+    text-align: center;
+  }
+
+  .rightSide {
+    width: 90%;
+  }
+  
+  
+}
+
+/* Mudium Screen */
+
+@media (min-width: $tablet) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hh1 {
+    font-size: $h3Size;
+    text-align: center;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+  }
+}
+
+/* Large Screen */
+
+@media (min-width: $large) {
+
+}

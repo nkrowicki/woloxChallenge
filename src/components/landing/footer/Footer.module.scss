@@ -26,7 +26,7 @@
   background-color: $blueWolox;
   color: #fff;
   cursor: pointer;
-  font-size: 25px;
+  font-size: $h4Size;
   margin: 20px 0px 40px 0px;
   font-weight: bold;
 
@@ -54,8 +54,46 @@
   background-size: contain;
 
   height: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Mobile Screen */
+@media (max-width: $mobile) {
+  .hh2{
+    font-size: $h3Size !important;
+  }
+
+  .hh3{
+    font-size: $h4Size !important;
+
+  }
+  
+  .more{
+    font-size: $h5Size;
+  }
+}
+
+/* Mudium Screen */
+
+@media (min-width: $tablet) {
+  .hh2{
+    font-size: $h3Size !important;
+  }
+
+  .hh3{
+    font-size: $h4Size !important;
+
+  }
+}
+
+/* Large Screen */
+
+@media (min-width: $large) {
+  .hh2{
+    font-size: $h2Size !important;
+  }
 }
