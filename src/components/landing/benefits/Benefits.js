@@ -13,7 +13,7 @@ const Benefits = () => {
     <div id='benefits' className={styles.heroContainer}>
       <div className={styles.container}>
 
-        <h1 className={styles.hh1}>
+        <h1 className={`${styles.hh1} titleBenefits`}>
           Entre los beneficios que ofrecemos se encuentran
           <span className={styles.blueWolox}>{" ;)"}</span>
         </h1>

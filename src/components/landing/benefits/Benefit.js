@@ -12,7 +12,7 @@ const Benefit = ({ img, text }) => {
 };
 
 Benefit.propTypes = {
-  img: PropTypes.string.isRequired,
+  img: PropTypes.object.isRequired,
   text: PropTypes.string.isRequired,
 };
 

@@ -10,7 +10,7 @@ const Requeriments = () => {
       <div className={styles.container}>
 
         <div className={styles.leftSide}>
-          <h1 className={styles.hh1}>Requerimientos</h1>
+          <h1 className={`${styles.hh1} requerimentsText`}>Requerimientos</h1>
         </div>
 
         <div className={styles.rightSide}>

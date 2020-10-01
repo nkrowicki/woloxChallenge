@@ -9,7 +9,7 @@ const Section = () => {
         <div className={styles.leftSide}>
           <h1 className={styles.hh1}>
             <span className={styles.greenWolox}>350 +</span>{' '}
-            <span className={styles.blueWolox}>Woloxers</span>
+            <span className={`${styles.blueWolox} textWoloxers`}>Woloxers</span>
           </h1>
           <div className={styles.twitterBox}>
             <img src={image} className={styles.imageTwitter} />
