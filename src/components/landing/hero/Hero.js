@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import { useTranslation } from "react-i18next";
+import Image from '../../../assets/ImgHero/Ic_ilustra_Hero.png';
 
 const Hero = () => {
   const [t] = useTranslation();
@@ -23,7 +24,7 @@ const Hero = () => {
         </div>
         <div className={styles.rightSide}>
           <img
-            src="/assets/ImgHero/Ic_ilustra_Hero.png"
+            src={Image}
             className={styles.imageHero}
           />
         </div>
