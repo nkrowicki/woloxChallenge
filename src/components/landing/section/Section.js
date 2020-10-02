@@ -18,9 +18,9 @@ const Section = () => {
             <img src={image} className={styles.imageTwitter} />
             <h2 className={styles.twitterText}>@Wolox</h2>
           </div>
-          <button className={styles.followTwitter}>
+          <a target="_blank" href={'https://twitter.com/wolox'} className={styles.followTwitter}>
             {t("section.buttonFollow")}
-          </button>
+          </a>
         </div>
 
         <div className={styles.rightSide}>
