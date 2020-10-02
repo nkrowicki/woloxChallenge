@@ -71,6 +71,11 @@ $fontUrlFiraSans: "../assets/Fonts/Fira_Sans/";
   src: url($fontUrlMontserrat + "Montserrat-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: url($fontUrlMontserrat + "Montserrat-ExtraBold.ttf") format("truetype");
+}
+
 * {
   font-family: "Montserrat Light", "Fira Sans Light";
 }
